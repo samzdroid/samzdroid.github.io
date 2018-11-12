@@ -58,3 +58,22 @@
       </a>
     </div>
   </div>
+
+  <div class="user-projects">
+  <div class="images-left">
+      <img alt="mountains" src="{{ "/assets/img/robertsons/screen1.png" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents-right">
+    <h3> MDT App </h3>
+    <ul>
+      <li> Android App </li>
+    </ul>
+    <p>The client wanted a dashboard app for Mobile Data Terminals, providedby CalAmp, installed in their trucks. It should behave as default launcheron the tablet. On home screen, there should be an option to go to routing screen, where drivers will have the option to either enter an addressor select from a list of locations. The backend server can dispatch messages to the trucks and in case a location is received, the route to thatlocation should be displayed.
+	<p>The MDTs were also required to communicate with the LMU installed inthe trucks. The accumulator params were to be read from LMU and displayed on a screen in tablet. The dashboard app was required to implement CalAmp Fleet management protocol for routing, messaging andjob dispatch. These MDTs did not have the standard google play services running for any Maps/Routing. For this,the dashboard app was required to use Sygic Navigation.</p>
+    <p>A great app to streamline the entire logistics process.</p>
+	<p>It was a challenging project as I did nothave access to the MDT or the LMU andhad to implement purely on the basis ofavailable documentation. The app waslater tested in a real truck which hadMDT and LMU installation in place.
+The app was successfully delivered tothe client. Although it is not availableon the Google Play Store as the app isavailable on client’s private networkand they themselves push the app tothe MDTs.</p>
+	<p>Map button on home screen takes theuser to the Map page. Here the Mapshave been integrated using the SygicEmbedded library. The map page initially loads with current location. Thereis a list of Plant locations in a dropdownon the left side of the Map screen.When a user selects one of these locations. He can click on Route button toload a route from current location tothe selected plant location. The route isalso loaded using the Sygic library and isdisplayed on screen, hiding the Plant locations dropdown. User can also go back to the Home scren from here.</p>
+	
+    </div>
+</div>
